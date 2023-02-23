@@ -1,9 +1,7 @@
-/*
-import 'package:bookly/Features/home/presentation/views/book_details_view.dart';
-import 'package:bookly/Features/home/presentation/views/home_view.dart';
-import 'package:bookly/Features/search/presentation/views/search_view.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../Features/Home/presentation/views/book_details_view.dart';
+import '../../Features/Home/presentation/views/home_view.dart';
 import '../../Features/Splash/presentation/views/splash_view.dart';
 
 abstract class AppRouter {
@@ -17,10 +15,10 @@ abstract class AppRouter {
         path: '/',
         builder: (context, state) => const SplashView(),
       ),
-      GoRoute(
-        path: kSearchView,
-        builder: (context, state) => const SearchView(),
-      ),
+      //GoRoute(
+      //path: kSearchView,
+      //builder: (context, state) => const SearchView(),
+      //),
       GoRoute(
         path: kHomeView,
         builder: (context, state) => const HomeView(),
@@ -32,4 +30,3 @@ abstract class AppRouter {
     ],
   );
 }
-*/
