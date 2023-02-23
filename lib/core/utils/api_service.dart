@@ -1,4 +1,3 @@
-/*
 import 'package:dio/dio.dart';
 
 class ApiService {
@@ -12,4 +11,3 @@ class ApiService {
     return response.data;
   }
 }
-*/
