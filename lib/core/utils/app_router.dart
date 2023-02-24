@@ -1,7 +1,6 @@
 import 'package:bookly_app/core/utils/service_locator.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-
 import '../../Features/Home/data/models/book_model/book_model.dart';
 import '../../Features/Home/data/repos/home_repo_impl.dart';
 import '../../Features/Home/presentation/manger/smila_books_cubit/similar_books_cubit.dart';

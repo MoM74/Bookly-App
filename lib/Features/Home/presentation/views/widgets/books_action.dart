@@ -1,5 +1,5 @@
+import 'package:bookly_app/Features/Home/presentation/views/widgets/web_view_screen.dart';
 import 'package:flutter/material.dart';
-
 import '../../../../../core/utils/function/launch_url.dart';
 import '../../../../../core/widgets/custom_button.dart';
 import '../../../data/models/book_model/book_model.dart';
@@ -27,7 +27,13 @@ class BooksAction extends StatelessWidget {
           Expanded(
               child: CustomButton(
             onPressed: () {
-              launchCustomUr(context, 'bookModel.volumeInfo.previewLink');
+              //Navigator.push(
+              //  context,
+              //  MaterialPageRoute(
+              //      builder: (context) =>
+              //          WebViewScreen(bookModel.volumeInfo.previewLink)),
+              //);
+              launchCustomUr(context, '${bookModel.volumeInfo.previewLink}');
             },
             fontSize: 16,
             text: getText(bookModel),
