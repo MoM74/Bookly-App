@@ -27,13 +27,12 @@ class BooksAction extends StatelessWidget {
           Expanded(
               child: CustomButton(
             onPressed: () {
-              //Navigator.push(
-              //  context,
-              //  MaterialPageRoute(
-              //      builder: (context) =>
-              //          WebViewScreen(bookModel.volumeInfo.previewLink)),
-              //);
-              launchCustomUr(context, '${bookModel.volumeInfo.previewLink}');
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) =>
+                        WebViewScreen(bookModel.volumeInfo.previewLink)),
+              );
             },
             fontSize: 16,
             text: getText(bookModel),
